@@ -1,0 +1,14 @@
+CREATE DATABASE usuarios;
+USE usuarios;
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuarios (username, password) VALUES
+('info', 'info123');
+
+SELECT * FROM usuarios WHERE username = 'info' AND password = 'info123';
+
